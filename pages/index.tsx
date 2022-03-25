@@ -24,13 +24,13 @@ const Home: NextPage = () => {
 				explain to you my thinking and future of this project.
 			</Text>
 			<Text my={4}>
-				<Text fontWeight={700} fontSize={"4xl"}>
+				<Text fontWeight={"semibold"} fontSize={"4xl"}>
 					Payper
-				</Text>{" "}
+				</Text>
 				is a paperless payments solution which helps you pay to
 				registered merchants in stables.
 			</Text>
-			<Text my={4}>
+			<Text my={4} fontWeight="normal">
 				If you&apos;re an Indian, you know what is UPI. I wanted to
 				build a system similar to that on top of Ethereum, more
 				specifically on polygon because, you know, low gas. If you
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
 				Corporation of India facilitating inter-bank peer-to-peer and
 				person-to-merchant transactions.
 			</Text>
-			<Text my={6}>
+			<Text my={4}>
 				Being a crypto bro I would like to use it to pay at places. I
 				had this idea when my UPI wasn&apos;t working and I was
 				embarassing myself in front of a shopkeeper. I thought what if
