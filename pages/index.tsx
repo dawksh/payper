@@ -69,7 +69,7 @@ const Home: NextPage = () => {
 			try to make sure you have a reserved username when this rolls out on
 			mainnet! If you think this is a good idea and want to buidl it
 			beside me, feel free to reach out. Cheers!
-			<Button>
+			<Button colorScheme={"blackAlpha"}>
 				<Link href={"/register"}> Register Name Here</Link>
 			</Button>
 		</Flex>
