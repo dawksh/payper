@@ -6,11 +6,13 @@ import { web3Context } from "../../utils/web3";
 import { Box } from "@chakra-ui/react";
 
 const Layout = ({ children }: any) => {
+	const [bool, setBool] = useState<Boolean>(false);
+
 	const conf = () => {
 		const temp = localStorage.getItem("WEB3_CONNECT_CACHED_PROVIDER");
 		console.log(temp);
-		if (temp === "injected") {
-			return true;
+		if (temp == "injected") {
+			setBool(true);
 		} else {
 			return false;
 		}
@@ -18,6 +20,20 @@ const Layout = ({ children }: any) => {
 
 	const [web3, setWeb3] = useContext(web3Context);
 	const [address, setAddress] = useState<null | string>(null);
+
+	useEffect(() => {
+		conf();
+	});
+
+	useEffect(() => {
+		if (bool) {
+			onConnect().then((res) => {
+				return false;
+			});
+		} else {
+			false;
+		}
+	}, [bool]);
 
 	const onConnect = async () => {
 		const provider = await web3Modal.connect();
@@ -29,6 +45,7 @@ const Layout = ({ children }: any) => {
 		let chainID = await signer.getChainId();
 
 		if (chainID != (process.env.NEXT_PUBLIC_APP_CHAINID as any)) {
+			alert("Please switch to matic testnet");
 		} else {
 			setAddress(address);
 			setWeb3(web3Provider);

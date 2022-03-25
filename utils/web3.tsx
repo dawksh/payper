@@ -3,7 +3,7 @@ import React, { useState, createContext } from "react";
 export const web3Context: any = createContext([]);
 
 const Web3 = ({ children }: any) => {
-	const [web3, setWeb3] = useState<any>();
+	const [web3, setWeb3] = useState<any>(null);
 
 	return (
 		<web3Context.Provider value={[web3, setWeb3]}>
