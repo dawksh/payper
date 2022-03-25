@@ -71,7 +71,7 @@ const Home: NextPage = () => {
 			rolls out on mainnet! If you think this is a good idea and want to
 			buidl it beside me, feel free to reach out. Cheers!
 			<Button colorScheme={"blackAlpha"}>
-				<Link href={"/register"}> Register Name Here</Link>
+				<Link href={"/register"}> Register Name Here </Link>
 			</Button>
 		</Flex>
 	);
