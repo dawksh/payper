@@ -44,7 +44,8 @@ const Home: NextPage = () => {
 				Being a crypto bro I would like to use it to pay at places. I
 				had this idea when my UPI wasn&apos;t working and I was
 				embarassing myself in front of a shopkeeper. I thought what if
-				he accepted USDC, I could&apos;ve easily paid him 10 folds.
+				he accepted USDC, I could&apos;ve easily paid him 10 folds (not
+				really).
 			</Text>
 			<Text my={6}>
 				The next question was how can he accept crypto? 2 problems that
