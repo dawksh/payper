@@ -24,13 +24,14 @@ const Home: NextPage = () => {
 				explain to you my thinking and future of this project.
 			</Text>
 			<Text my={4}>
-				<Text fontWeight={"semibold"} fontSize={"4xl"}>
+				<Text fontWeight={"bold"} fontSize={"4xl"}>
 					Payper
 				</Text>
 				is a paperless payments solution which helps you pay to
 				registered merchants in stables.
 			</Text>
-			<Text my={4} fontWeight="normal">
+			<Text></Text>
+			<Text my={4}>
 				If you&apos;re an Indian, you know what is UPI. I wanted to
 				build a system similar to that on top of Ethereum, more
 				specifically on polygon because, you know, low gas. If you
